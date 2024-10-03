@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rspack build --mode production",
+    "start": "rspack serve --mode development"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.0.8",
+    "@rspack/core": "^1.0.8",
+    "@types/node": "^22.7.4",
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "postcss": "^8.4.47",
+    "postcss-loader": "^8.1.1",
+    "rimraf": "^6.0.1",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.13",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.2"
+  }
+}
