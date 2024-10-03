@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rspack Tailwind Example</title>
+  <link href="/styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <h1 class="bg-green-400 w-max">Hello, Rspack + TailwindCSS</h1>
-  <h2 class="bg-blue-300 w-max">You're good to go! ;)</h2>
-  <script src="/bundle.js"></script>
-  <link href="/styles.css" rel="stylesheet">
-</body>
+  <h1 class="bg-green-400 w-max p-4">Hello, Rspack + TailwindCSS</h1>
+  <h2 class="bg-blue-300 w-max p-4">You're good to go! ;)</h2>
 
-</html>
+  <div class="text-center mt-8">
+    <h3 class="text-lg font-semibold">Counter</h3>
+    <p id="displayValue" class="text-2xl mt-4">0</p>
+    <div class="flex justify-center gap-4 mt-4">
+      <button id="decrementButton" class="bg-red-500 text-white p-2 rounded">-</button>
+      <button id="incrementButton" class="bg-green-500 text-white p-2 rounded">+</button>
+    </div>
+  </div>

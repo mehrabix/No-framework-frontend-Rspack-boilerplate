@@ -1,11 +1,26 @@
 import './styles.css';
 
-const inputElement = document.getElementById('inputValue') as HTMLInputElement | null;
+const incrementButton = document.getElementById('incrementButton') as HTMLButtonElement | null;
+const decrementButton = document.getElementById('decrementButton') as HTMLButtonElement | null;
 const displayElement = document.getElementById('displayValue') as HTMLParagraphElement | null;
 
-if (inputElement && displayElement) {
-  inputElement.addEventListener('input', () => {
-    displayElement.textContent = inputElement.value;
+let count = 0;
+
+const updateDisplay = () => {
+  if (displayElement) {
+    displayElement.textContent = count.toString();
+  }
+};
+
+if (incrementButton && decrementButton) {
+  incrementButton.addEventListener('click', () => {
+    count++;
+    updateDisplay();
+  });
+
+  decrementButton.addEventListener('click', () => {
+    count--;
+    updateDisplay();
   });
 }
 
